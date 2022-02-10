@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Livewire\Controllers\HttpConnectionHandler;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -13,7 +14,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+//        \App::bind(HttpConnectionHandler::class, function () {
+//            return new \App\HttpConnectionHandler();
+//        });
     }
 
     /**
